@@ -1,0 +1,92 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+  background-color: #EFEEF3;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.cabeçalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  background-color: #EFEEF3;
+}
+.cabeçalho .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  list-style-type: none;
+}
+@media (max-width: 500px) {
+  .cabeçalho .menu {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cabeçalho .menu li {
+    padding: 5px;
+  }
+}
+
+.back {
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+@media (max-width: 500px) {
+  .section1 {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.section1 .texto1 {
+  text-align: center;
+  width: 40%;
+  font-size: 25px;
+}
+.section1 .texto1 h2 {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .section2 {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.section2 .texto2 {
+  text-align: start;
+  width: 30%;
+}
+.section2 .texto2 h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+.section2 .imagens {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */

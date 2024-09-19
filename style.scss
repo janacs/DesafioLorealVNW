@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kodchasan", sans-serif;
+    background-color: #EFEEF3;
+}
+
+.logo{
+    width: 10vw;
+}
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    background-color: #EFEEF3;
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90vw;
+        list-style-type: none;
+
+        @media(max-width: 500px){
+            justify-content: center;
+            flex-direction: column;
+            li{
+                padding: 5px;
+            }
+        }
+    }
+}
+
+.back{
+    width: 100%;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+
+    @media(max-width: 500px){
+        justify-content: center;
+        flex-direction: column;
+    }
+    .texto1{
+
+        h2{
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+        text-align: center;
+        width: 40%;
+        font-size: 25px;
+    }
+}
+
+.section2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    align-items: center;
+    
+    @media(max-width: 500px){
+        justify-content: center;
+        flex-direction: column;
+    }
+    .texto2{
+        text-align: start;
+        width: 30%;
+        h2{
+            font-weight: 400;
+            font-size: 25px;
+        }
+    }
+
+    .imagens{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
